@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+
+#########################################
+####START EXPRESS
+#########################################
+  nodejs_telemetry_script:
+    container_name: nodejs_telemetry_script
+    image: nodejs_telemetry_script
+    build: .
+    volumes:
+      - ./:/app/
+      - /app/node_modules/
+    entrypoint: ["nodejs", "index.js", "filename_here"]
+#########################################
+####END EXPRESS
+#########################################
