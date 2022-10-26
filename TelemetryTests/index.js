@@ -13,6 +13,7 @@ if (fs.existsSync(filePath)) {
 
     gpmfExtract(file)
         .then(extracted => {
+            console.log(extracted)
             goproTelemetry(extracted, {}, telemetry => {
                 fs.writeFileSync(`${fileName}.json`, JSON.stringify(telemetry));
                 console.log('Telemetry saved as JSON');

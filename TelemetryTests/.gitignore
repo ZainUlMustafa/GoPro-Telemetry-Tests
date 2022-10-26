@@ -1,6 +1,7 @@
 *.mp4
 *.avi
 *.MP4
+*.json
 /node_modules
 package-lock.json
 output_path.json

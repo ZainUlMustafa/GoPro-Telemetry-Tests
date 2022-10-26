@@ -1,0 +1,9 @@
+;FFMETADATA1
+major_brand=mp41
+minor_version=538120216
+compatible_brands=mp41
+creation_time=2021-05-11T10:57:29.000000Z
+location=+36.1707+027.8609/
+location-eng=+36.1707+027.8609/
+firmware=H19.03.02.00.00
+encoder=Lavf58.76.100
