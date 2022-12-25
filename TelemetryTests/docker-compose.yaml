@@ -12,7 +12,7 @@ services:
     volumes:
       - ./:/app/
       - /app/node_modules/
-    entrypoint: ["nodejs", "index.js", "./samples/karma.mp4"]
+    entrypoint: ["node", "index.js", "./data/karma.mp4"]
 #########################################
 ####END EXPRESS
 #########################################

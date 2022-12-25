@@ -1,3 +1,5 @@
+// RUN VIA DOCKER COMPOSE: docker compose -f docker-compose.yaml up
+
 const gpmfExtract = require('gpmf-extract');
 const goproTelemetry = require(`gopro-telemetry`);
 const fs = require('fs');
