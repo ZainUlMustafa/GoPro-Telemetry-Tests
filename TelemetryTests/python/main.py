@@ -1,6 +1,6 @@
 import gpmf
 import gpxpy
-# pip install git+https://github.com/zainulmustafa/pygpmf.git@main
+# pip install git+https://github.com/zainulmustafa/pygpmf.git
 
 def extractGpxV2(videoPath, gpxDir):
     link = videoPath
