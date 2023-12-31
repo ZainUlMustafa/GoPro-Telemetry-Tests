@@ -35,14 +35,25 @@ const extractGPMFAt = async (videoFile, stream) => {
   return rawData;
 };
 
-const filename = './samples/GH010163'
+const filename = './big_data/video'
 extractGPMF(`${filename}.MP4`).then(e => {
     // console.log(extracted)
     const extracted = {
         rawData: e,
     }
     goproTelemetry(extracted, {}, telemetry => {
-        fs.writeFileSync(`${filename}.json`, JSON.stringify(telemetry));
+        fs.writeFileSync(`${filename}.json`, JSON.stringify(telemetry, null, 4));
         console.log('Telemetry saved as JSON');
     });
 })
+
+// extractGPMF(`https://firebasestorage.googleapis.com/v0/b/deeprowserverless.appspot.com/o/Projects%2Fpr4lAvyr5kWUmkYveFsPV0I%2FGH010555.MP4?alt=media&token=58f7043a-56e7-4393-90fa-b617b265bd02`).then(e => {
+//     // console.log(extracted)
+//     const extracted = {
+//         rawData: e,
+//     }
+//     goproTelemetry(extracted, {}, telemetry => {
+//         fs.writeFileSync(`online.json`, JSON.stringify(telemetry));
+//         console.log('Telemetry saved as JSON');
+//     });
+// })
